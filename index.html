@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>건강을 채우다, 필핏.</title>
+    <link rel="stylesheet" href="master.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+        <nav>
+          <div class="menu">
+            <ul>
+              <li><a onclick="fnMove('01')"><img src="img/s06.png"></a></li>
+              <li><a onclick="fnMove('02')"><img src="img/s06.png"></a></li>
+              <li><a onclick="fnMove('03')"><img src="img/s06.png"></a></li>
+              <li><a onclick="fnMove('04')"><img src="img/s06.png"></a></li>
+              <li><a onclick="fnMove('05')"><img src="img/s06.png"></a></li>
+              <li><a onclick="fnMove('06')"><img src="img/s06.png"></a></li>
+              <li><a onclick="fnMove('07')"><img src="img/s06.png"></a></li>
+              <li><a onclick="fnMove('08')"><img src="img/s06.png"></a></li>
+              <li><a onclick="fnMove('09')"><img src="img/s06.png"></a></li>
+            </ul>
+          </div>
+        </nav>
+    <div class="box box1" id="anchor01">
+        <div class="wrap">
+            <div class="b1_s1">
+               <img src="img/s01.png" alt="첫 설명글" data-aos="fade-right" data-aos-duration="1250">
+            </div>
+        </div>
+    </div>
+
+    <div class="box box2" id="anchor02">
+        <div class="wrap">
+            <div class="b2_s2">
+                <img src="img/s02.png" alt="두번째 설명글" data-aos="fade-left" data-aos-duration="1250">
+            </div>
+        </div>
+    </div>
+
+    <div class="box box3" id="anchor03">  
+    </div>
+
+    <div class="box box4"  id="anchor04">
+    </div>
+
+    <div class="box box5" id="anchor05">
+        <video autoplay loop muted class="video01">
+            <source src="img/mov.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="box box6" id="anchor06">
+        <div class="wrap">
+            <div class="b6_s3_01">
+                <img src="img/s031.png" alt="장점1" data-aos="zoom-in"  data-aos-duration="1250">
+                </div>
+            <div class="b6_s3_02">
+                <img src="img/s032.png" alt="장점2" data-aos="zoom-in"  data-aos-duration="1250">
+                </div>
+            <div class="b6_s3_03">
+                <img src="img/s033.png" alt="장점3" data-aos="zoom-in"  data-aos-duration="1250">
+                 </div>
+        </div>
+    </div>
+
+    <div class="box box7"  id="anchor07">
+        <div class="wrap">
+            <div class="b7_s4">
+                <img src="img/s04.png" alt="앱목업">
+            </div>
+        </div>
+    </div>
+
+    <div class="box box8" id="anchor08">
+    </div>
+    <div class="box box9" id="anchor09">
+    </div>
+    <div class="box box10">
+    </div>
+    <div class="box box11">
+        <div class="wrap">
+            <div class="b11_s5">
+                <img src="img/s05.png" alt="브랜드"  data-aos="flip-left" data-aos-duration="1250">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <br>
+        <br>
+        Design by GOJEEWOO. All rights reserved.<br>
+        imjiu00@kakao.com
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
+      <!--특정위치로 이동 시작-->
+    <script type="text/javascript" src="anchor_jquery.js"></script>
+    <script>
+      function fnMove(seq){
+          var offset = $("#anchor" + seq).offset();
+          $('html, body').animate({scrollTop : offset.top},1000);
+      }
+    </script>
+    <!--특정위치로 이동 끝-->
+</body>
+</html>
